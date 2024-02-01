@@ -1,0 +1,58 @@
+*{
+    font-family: 'Bebas Neue', sans-serif; 
+}
+body{
+    background-color: #7D8491;
+} 
+h1{ 
+color: #0D324D  ; 
+font-size: 60px; 
+margin-top: 0px; 
+}  
+p{
+color: #0D324D; 
+margin-top: 100px; 
+margin-left: 200px;
+}
+textarea{
+    background-color: transparent;
+    border: none;  
+    width: 300px; 
+    height: 50px; 
+    font-size: 18px; 
+    margin-left: 100px;   
+    outline: 0;  
+    overflow-y: auto;
+} 
+::placeholder{
+    color: #0D324D; 
+    font-size: 16px; 
+} 
+button{
+    border-radius: 15px; 
+    background-color: #0D324D; 
+    color: aliceblue; 
+    width: 150px;
+    height: 40px; 
+    margin-left: 100px; 
+    font-size: 20px; 
+
+} 
+.resposta{
+    width: 300px;
+    height: 400px; 
+    background-color: white; 
+    border-radius: 20px; 
+    margin-left: 20px;
+
+} 
+.menu{
+    display: flex;
+} 
+h2{
+    margin-left: 100px; 
+    color:#0D324D ;
+} 
+p1{
+    margin-left: 20px;
+}
