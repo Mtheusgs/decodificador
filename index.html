@@ -7,29 +7,39 @@
     <title>Decodificador</title>  
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">   
 </head>
 <body>
-    <main> 
-        <h1>
+    <header>
+        <h1 class="siglas">
             M.E.
         </h1>
+    </header>
+    <main> 
         <div class="menu">
-            <textarea name="" id="texto_inicial" cols="30" rows="10" placeholder="Digite aqui"></textarea> 
-            <div class="resposta"> 
-                <h2>Respostas</h2> 
-                <p1></p1>
+            <textarea oninput="text_auto()" class="caixa" name="" id="texto_inicial" cols="30" rows="10" placeholder="Digite aqui"></textarea> 
+            <div class="resposta">  
+                <div class="manter">
+                    <p1 class="resp"></p1>
+                    <button id="botao" class="copia" style="display: none;" onclick="copiarTexto()">Copiar</button>
+                </div> 
+                <img id="img" class="img_res"src="High quality products 1 1.svg" alt="pessoa procurando">  
+                <h3 id="titulo">Nenhuma mensagem encontrada</h3> 
+                <p id="ideia" class="ideia">Digite um texto que você deseja Criptografar ou Descriptografar</p>  
             </div>
         </div> 
-        <p>-Apenas letras minúsculas e sem acento.</p> 
-        <div class="button"> 
-            <button class="b1" onclick="pegarTexto()">Criptografar</button> 
-            <button class="b2" onclick="descri()">Descriptografar</button>
-            
+    </main>  
+    <footer class="pe"> 
+        <h2></h2> 
+        <div class="sobre">
+            <img class="escla" src="Group.png" alt="exclama">
+            <p>-Apenas letras minúsculas e sem acento.</p>
         </div>
-    </main> 
+        <div class="boton">
+            <button onclick="pegarTexto()" class="bb">Criptografar</button>
+            <button onclick="descri()" class="bbb" onclick="">Descriptografar</button>
+        </div>
+    </footer>
     <script src="decodificador.js" defer></script>
     
 </body>
