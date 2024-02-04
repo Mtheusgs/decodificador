@@ -1,68 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 *{
-    font-family: 'Bebas Neue', sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}  
+:root{
+    --cor-primaria:#f3f5fc; 
+    --cor-secundaria: #052051; 
+    --cor-terciaria:white; 
+    --cor-quarta: #868E96;  
+    --cor--cinco:#405057;
+    --cor-hover:#609ED4;  
 }
 body{
-    background-color: #f3f5fc ;
-} 
-h1{ 
-color: #052051  ; 
-font-size: 60px; 
-margin-top: 0px; 
-}  
-p{
-color: #ADB5BD; 
-margin-top: 50px; 
-margin-left: 550px;
-}
-textarea{
-    background-color: transparent;
-    border: none;  
-    width: 560px; 
-    height: 600px; 
-    font-size: 18px; 
-    margin-left: 250px; 
-    outline: 0;   
+    background-color: var(--cor-primaria);
+    height: 100vh;
 
-    overflow-y: auto;
 } 
-::placeholder{
-    color: #0D324D; 
-    font-size: 16px; 
-} 
-button{
-    border-radius: 15px; 
-    width: 150px;
-    height: 40px; 
+.siglas{
+    color: #052051  ; 
+    font-size: 60px; 
+    font-family: 'Inter', sans-serif; 
+    width: 120px; 
+    height: 48px; 
 }
-.resposta{
-    width: 400px;
-    height: 620px; 
-    background-color: white; 
-    border-radius: 20px; 
-    margin-left: 200px; 
-    padding: 20px;
 
+.siglas:hover{
+    color: var(--cor-hover); 
 } 
 .menu{
+    display: flex;  
+    justify-content: center; 
+    padding: 2% 8% 0% 8%;
+} 
+.resposta{
+    background-color: var(--cor-terciaria); 
+    color: var(--cor-secundaria); 
+    height: 700px; 
+    width: 800px; 
+    border-radius: 32px; 
+    margin-left: 600px; 
+    margin-right: 10px; 
+    padding: 40px;  
+    font-family: 'Inter', sans-serif; 
     display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    justify-content: center; 
+    align-items: center;  
+     
+}  
+.caixa{
+    width: 1200px;  
+    font-family: 'Inter', sans-serif; 
+    background-color: transparent; 
+    outline: none; 
+    border: none; 
+    color: var(--cor-secundaria); 
+    font-size: 32px; 
+} 
+.pe{
+    padding-left: 240px; 
+    color: var(--cor-quarta) ; 
+    font-size: 18px; 
+
+} 
+
+.boton{ 
+    display: flex;
+    gap: 24px; 
+    margin-top: 20px;
+    
+    
+}  
+.bb{
+    background-color: var(--cor-secundaria);  
+    color: var(--cor-terciaria);  
+    width: 328px; 
+    height: 67px; 
+    border-radius: 24px; 
+    font-family: 'Inter', sans-serif; 
+    font-size: 16px;
+    font-weight: 400; 
+    border-color: none; 
+    cursor: pointer;
+
+
+}
+.bbb{
+    background-color: transparent;  
+    color: var(--cor-secundaria);  
+    width: 328px; 
+    height: 67px; 
+    border-radius: 24px; 
+    font-family: 'Inter', sans-serif; 
+    font-size: 16px;
+    font-weight: 400;  
+    border-color: var(--cor-secundaria); 
+    cursor: pointer;
+} 
+.bb:hover{
+    background-color: transparent;  
+    color: var(--cor-secundaria); 
+    border-color: #052051;   
+} 
+.bbb:hover{
+    background-color: var(--cor-secundaria);  
+    color: var(--cor-terciaria); 
+    border-color: black;   
+}  
+.copia{
+    background-color: transparent;  
+    color: var(--cor-secundaria);  
+    width: 328px; 
+    height: 67px; 
+    border-radius: 24px; 
+    font-family: 'Inter', sans-serif; 
+    font-size: 16px;
+    font-weight: 400;  
+    border-color: var(--cor-secundaria); 
+    cursor: pointer;
+} 
+.sobre{
+    display: flex;
+    flex-direction: row; 
+    gap: 30px; 
+}
+.escla{
+    width: 16px;
+    height: 16px;
 } 
 h2{
-    margin-left: 150px; 
-    color:#757FB2 ;
+    margin-bottom: 10px;
 } 
-p1{
-    color: black;
+h3{
+    font-family:'Inter', sans-serif; 
+    font-weight: 700; 
+    font-size: 24px; 
+    text-align: center; 
+    color: var(--cor--cinco);
 } 
-.b1{
-    background-color: #0A3871;
-    border: none;
-    color: white; 
-    font-size: 20px; 
-    margin-left: 500px ;
-}
-.b2{
-    background-color: transparent; 
-    border-color: #0A3871; 
-    color: #0A3871; 
-    font-size: 20px;
+.resp{
+    text-align: center; 
+    word-break: break-word; 
+    margin-bottom: auto;  
+    
+    
+    
+} 
+.img_res{
+    margin-top: 20PX; 
+    
+} 
+.ideia{
+    font-family:'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px; 
+    text-align: center; 
+    color: var(--cor--cinco); 
+    margin-bottom: 10px
+    ;
+} 
+
+.manter{
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    height: 100%;
+}  
+.copia{
+    margin-top: auto; 
+    
 }
